@@ -109,10 +109,14 @@ div[data-testid="stMarkdownContainer"] {
 # =======================================
 # BIBLIOTECA:
 RUTA_BASE = os.path.dirname(__file__)
+
 st.write("RUTA_BASE =", RUTA_BASE)
-st.write("Archivos en la carpeta principal:", os.listdir(RUTA_BASE))
-st.write("RUTA_BASE =", RUTA_BASE)
-st.write("Archivos en la carpeta principal:", os.listdir(RUTA_BASE))
+
+st.write("Contenido de imagenes:")
+st.write(os.listdir(os.path.join(RUTA_BASE, "imagenes")))
+
+st.write("Contenido de musica:")
+st.write(os.listdir(os.path.join(RUTA_BASE, "musica")))
 canciones = [
     {
         "titulo": "Delirium - Anno Domini Beats",

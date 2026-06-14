@@ -109,6 +109,10 @@ div[data-testid="stMarkdownContainer"] {
 # =======================================
 # BIBLIOTECA:
 RUTA_BASE = os.path.dirname(__file__)
+st.write("RUTA_BASE =", RUTA_BASE)
+st.write("Archivos en la carpeta principal:", os.listdir(RUTA_BASE))
+st.write("RUTA_BASE =", RUTA_BASE)
+st.write("Archivos en la carpeta principal:", os.listdir(RUTA_BASE))
 canciones = [
     {
         "titulo": "Delirium - Anno Domini Beats",
@@ -226,10 +230,10 @@ with col1:
                 """,
                 unsafe_allow_html=True
             )
-            st.image(
-                cancion["imagen"],
-                use_container_width=True
-            )
+            if os.path.exists(cancion["imagen"]):
+                st.image(cancion["imagen"], use_container_width=True)
+            else:
+                st.warning(f"No existe: {cancion['imagen']}")
             st.markdown(
                 f"<p style='text-align:center; font-weight:600'>{cancion['titulo']}</p>",
                 unsafe_allow_html=True

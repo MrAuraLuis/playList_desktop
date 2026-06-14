@@ -141,8 +141,8 @@ canciones = [
 
     {
         "titulo": "Care Is Heavy - Jeremy Korpas, Rick Barry",
-        "imagen": os.path.join(RUTA_BASE, "imagenes", "care_is_heavy.jpg"),
-        "audio": os.path.join(RUTA_BASE, "musica", "care_is_heavy.mp3"),
+        "imagen": os.path.join(RUTA_BASE, "imagenes", "care is heavy.jpg"),
+        "audio": os.path.join(RUTA_BASE, "musica", "care is heavy.mp3"),
         "video": "https://youtu.be/G5yOo4WLQPY"
     },
 
@@ -162,8 +162,8 @@ canciones = [
 
     {
         "titulo": "The Fog - Trey Xavier",
-        "imagen": os.path.join(RUTA_BASE, "imagenes", "the_fog.jpg"),
-        "audio": os.path.join(RUTA_BASE, "musica", "the_fog.mp3"),
+        "imagen": os.path.join(RUTA_BASE, "imagenes", "the fog.jpg"),
+        "audio": os.path.join(RUTA_BASE, "musica", "the fog.mp3"),
         "video": "https://youtu.be/LOW48xnRZHM"
     },
 
@@ -183,15 +183,15 @@ canciones = [
 
     {
         "titulo": "Lost Myself - Lalanne",
-        "imagen": os.path.join(RUTA_BASE, "imagenes", "lost_myself.jpg"),
-        "audio": os.path.join(RUTA_BASE, "musica", "lost_myself.mp3"),
+        "imagen": os.path.join(RUTA_BASE, "imagenes", "lost myself.jpg"),
+        "audio": os.path.join(RUTA_BASE, "musica", "lost myself.mp3"),
         "video": "https://youtu.be/Baoa-2zEJHw"
     },
     
     {
         "titulo": "Gone Away - Blue Beat",
-        "imagen": os.path.join(RUTA_BASE, "imagenes", "gone_away.jpg"),
-        "audio": os.path.join(RUTA_BASE, "musica", "gone_away.mp3"),
+        "imagen": os.path.join(RUTA_BASE, "imagenes", "gone away.jpg"),
+        "audio": os.path.join(RUTA_BASE, "musica", "gone away.mp3"),
         "video": "https://youtu.be/D2yUW4ckhrA"
     }
 ]

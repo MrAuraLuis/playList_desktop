@@ -226,6 +226,10 @@ with col1:
                 """,
                 unsafe_allow_html=True
             )
+            st.image(
+                cancion["imagen"],
+                use_container_width=True
+            )
             st.markdown(
                 f"<p style='text-align:center; font-weight:600'>{cancion['titulo']}</p>",
                 unsafe_allow_html=True

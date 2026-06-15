@@ -268,7 +268,14 @@ with col2:
             f"<div class='glow-text'>🎧 REPRODUCIENDO: {cancion['titulo']}</div>",
             unsafe_allow_html=True
         )
-
+        if st.button("⏭️ Siguiente", use_container_width=True):
+            if st.session_state.playlist:
+                st.session_state.playlist.pop()
+                if st.session_state.playlist:
+                    st.session_state.reproduciendo = st.session_state.playlist[-1]
+                else:
+                    st.session_state.reproduciendo = None
+                st.rerun()
 # VIDEO DE YOUTUBE:
         if cancion.get("video", "").strip():
             st.video(cancion["video"])
